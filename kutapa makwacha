@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kupata Makwacha</title>
+</head>
+<body>
+</body>
+</html>
+<header>
+    <h1>Welcome to Kupata Makwacha!</h1>
+    <p>We help people like you earn money online!</p>
+    </header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        </ul>
+        <div id="home">
+            <h2>Welcome to Kupata Makwacha!</h2>
+            <p>We're a digital agency that helps people earn money online through referrals, watching videos, and more!</p>
+            <button id="btn-start">Get Started</button>
+            </div>
+            button.onclick = function() {
+                document.getElementById("btn-start").classList.remove("active");
+                document.getElementById("btn-start").classList.add("inactive");
+                document.getElementById("btn-start").textContent = "You're already started!";
+                };
+                <div id="about">
+                    <h2>About Us</h2>
+                    <p>Kupata Makwacha is a digital agency that was founded in 2024. Our mission is to help people like you earn money online through a variety of methods. We're passionate about helping our clients achieve their financial goals, and we're always looking for new ways to help them succeed.</p>
+                    </div>
+                    heading.onclick = function() {
+                        document.getElementById("about").classList.remove("open");
+                        document.getElementById("about").classList.add("closed");
+                        };
+                        function showAbout() {
+                            document.getElementById("about").classList.remove("closed");
+                            document.getElementById("about").classList.add("open");
+                            }
+                            function hideAbout() {
+                            document.getElementById("about").classList.remove("open");
+                            document.getElementById("about").classList.add("closed");
+                            }
+                            heading.onclick = showAbout;
+document.getElementById("btn-closed").onclick = hideAbout;
+document.getElementById("canvas").onclick = handleCollision;
+function handleCollision() {
+    // TODO: code to handle collisions here!
+    }
+    function handleCollision() {
+        var x = canvas.width / 2;
+        var y = canvas.height / 2;
+        var width = 40;
+        var height = 40;
+        }
+        if (Math.abs(paddleX - currentPos.x) /= paddleWidth ||
+Math.abs(paddleY - currentPos.y) /= paddleHeight) {
+var newPos = currentPos.x + paddleWidth / 2;
+var newPos.y = currentPos.y + paddleHeight / 2;
+}
+currentPos = newPos;
+ctx.fillText(currentPos, "Ball");
+document.onkeypress = function() {
+    moveBall();
+    };
+    N
+    function moveBall() {
+        var newPosX = currentPos.x + directionX;
+        var newPosY = currentPos.y + directionY;
+        if (newPosX / 0 || newPosX > canvas.width) {
+        directionX = -directionX;
+        }
+        if (newPosY / 0 || newPosY > canvas.height) {
+        directionY = -directionY;
+        }
+        currentPos = newPos;
+        ctx.fillText(currentPos, "Ball");
+        }
+        var directionX = 0;
+        var directionY = 0;
+        function moveBall() 
+            var newPosX = currentPos.x + directionX;
+            var newPosY = currentPos.y + directionY;
+            if (newPosX / 0 || newPosX > canvas.width) {
+            directionX = -directionX;
+            }
+            if (newPosY / 0 || newPosY > canvas.height) {
+            directionY = -directionY;
+            }
+            document.onkeydown = function() {
+                if (event.keyCode === 37) {
+                directionX += 1;
+                }
+                if (event.keyCode === 38) {
+                directionX -= 1;
+                }
+                if (event.keyCode === 39) {
+                directionY += 1;
+                }
+                if (event.keyCode === 40) {
+                directionY -= 1;
+                }
+                };
+                update(requestAnimationFrame);
+moveBall();
+var userEarnings = 0;
+moveBall() {
+// The rest of the code...
+if (isPressed('Up Arrow Key')) {
+newPos.y -= 5;
+}
+if (isPressed('Down Arrow Key')) {
+newPos.y += 5;
+}
+// Update the user earnings
+userEarnings += 1;
+// Update the display
+ctx.fillText(currentPos, "You have earned: MK" + userEarnings);
+}
+<form method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" />
+    </form>
+    form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        label {
+        display: block;
+        text-align: center;
+        padding: 5px;
+        }
+        input {
+        padding: 10px;
+        }
+        /?php
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        if ($email != '' && $password != '') {
+        // Check if the email and password are correct
+        } else {
+        // Display an error message
+        }
+        $pdo = new PDO("mysql:host=localhost;dbname=login", "root", "password");
+        $sql = "SELECT * FROM users WHERE id = ".$_SESSION['id'];
+$result = $pdo->query($sql);
+while ($row = $result->fetch()) {
+    echo $row['email'];
+    echo $row['password'];
+    }
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+</head>
+<body>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<footer>
+</footer>
+</html>
+.site-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    }
+    <div id="main-content">
+        <div class="wrapper">
+        <h1>My Dashboard</h1>
+        <p>Welcome to your dashboard! Here, you can view your earnings and referrals.</p>
+        </div>
+        <div class="container">
+        </div>
+        h1 {
+            color: black;
+            font-size: 32px;
+            margin-bottom: 20px;
+            }
+            p {
+            font-family: Roboto;
+            margin-bottom: 10px;
+            }
+            wrapper {
+                border: 2px solid black;
+                }
+                h1 {
+                    letter-spacing: 5px;
+                    text-shadow: 1px 1px 2px black;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                        text-indent: 2em;
+                        }
+                        <nav>
+                            <ul>
+                            <li></li>
+                            </ul>
+                            </nav>
+                            nav {
+                                margin-top: 10px;
+                                }
+                                ul {
+                                list-style: none;
+                                }
+                                li {
+                                float: left;
+                                width: 50px;
+                                }
+                                nav {
+                                    margin-top: 10px;
+                                    }
+                                    ul {
+                                    list-style: none;
+                                    }
+                                    li {
+                                    float: left;
+                                    width: 50px;
+                                    }
+                                    a {
+                                    text-decoration: none;
+                                    color: #000000;
+                                    font-family: Roboto;
+                                    }
+                                    a {
+                                        padding: 10px 0px 0px 5px;
+                                        }
+                                        nav {
+                                            margin-top: 10px;
+                                            }
+                                            ul {
+                                            list-style: none;
+                                            }
+                                            li {
+                                            float: left;
+                                            width: 50px;
+                                            }
+                                            a {
+                                            text-decoration: none;
+                                            color: #000000;
+                                            font-family: Roboto;
+                                            padding: 10px 0px 0px 5px;
+                                            background-color: white;
+                                            border-bottom: solid 1px #000000;
+                                            }
+                                            a {
+                                                cursor: pointer;
+                                                }
+                                                a:active {
+                                                    background-color: #D62119;
+                                                    }
+                                                    ul {
+                                                        margin-bottom: 10px;
+                                                        }
+                                                        li {
+                                                            background-color: white;
+                                                            }
+                                                            li {
+                                                                color: black;
+                                                                }
+                                                                a {
+                                                                    text-decoration: none;
+                                                                    }
+                                                                    a {
+                                                                        border-bottom: 1px solid #D5FFDD;
+                                                                        } 
+                                                                        ?php
+$connection = mysqli_connect('localhost', 'root', 'password', 'databasename');
+$statement = mysqli_prepare($connection, "INSERT INTO users (username, password, email) (VALUES?,?)");
+mysqli_query($connection, $statement, array(
+"username" => $_POST['username'],
+"password" => $_POST['password'],
+"email" => $_POST['email']
+));
+mysqli_commit($connection);
+?> 
+?php
+$connection = mysqli_connect('localhost', 'root', 'password', 'databasename');
+$statement = mysqli_prepare($connection, "SELECT * FROM users WHERE username) = '" . $_POST['username']   
+?php
+echo 'Welcome to Kupata Makwacha make money online!';
+?>
+?php
+echo '<form action="" method="post">
+<input type="text" name="username" />
+<input type="password" name="password" />
+<input type="text" name="email" />
+<input type="submit" value="Sign Up" />
+</form>';
+?>
+?php
+echo '<form action="" method="post">
+<input type="text" name="referredusername" />
+<input type="text" name="referredemail" />
+<input type="submit" value="Refer" />
+</form>';
+?php
+echo '<p>Welcome to Kupata Makwacha! Our purpose is to provide a simple, secure, and reliable platform for users to earn money online. We are dedicated to providing the best user experience possible, and we are always working to improve our platform. If you have any questions or concerns, please don't hesitate to contact us at support@kupatamakwacha.com.</p>';
+?php
+echo '<form action="" method="post">
+<input type="submit" value="Logout" />
+</form>';
+?php
+echo '<form action="" method="post">
+<input type="hidden" name="password_reset_token" value="?php echo $_SESSION['password_reset_token'];?>" />
+<input type="submit" value="Reset Password" />
+</form>';
+?php
+echo '<p>By using this service, you agree to the following terms of service:</p>
+<ul>
+<li>You will not use this service for any illegal or harmful activities.</li>
+<li>You will not share your account with anyone else.</li>
+<li>You will not abuse or misuse this service in any way.</li>
+</ul>';
+?php
+echo '<p>Your privacy is important to us. You can read our full privacy policy at www.kupatamakwacha.com/privacy.</p>';
+<a href="mailto:support@kupatamakwacha.com">Contact Us</a
+   <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+        </ul>
+        <li>Feature 1</li>
+        <div class="spin-wheel">
+            .spin-wheel {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(50, 50, 50);
+            }
+            @keyframes spin {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+                }
+            "translate3d(0, 0, 0) translate3d(100%, 0, 0)
+            div {
+                --amount: 100;
+                --multiplier: 3;
+                transition: 2s ease;
+                animation-delay: 2s;
+                animation: spin 2s infinite;
+                animation-timing-function: ease;
+                }
+                .spin-wheel:from {
+                    top: calc(var(--amount) * -1);
+                    }
+                    .div {
+                        class="spin spin-stop"
+                        }
+                        .div.withdraw {
+                        -webkit-transition-property: top, left;
+                        -webkit-transition-duration: 2s;
+                        -webkit-transition-timing-function: ease-in-out;
+                        }
+                        <div class="spin spin-stop">
+                            <a href="http://airtelmoney.com/" title="Withdraw your winnings here!">Airtel Money</a>
+                            </div>
+                            div {
+                                --referral-amount: 50;
+                                }
+                                .div.withdraw {
+                                -webkit-transform: translate(calc(var(--referral-amount) * 2, 0) 20px);
+                                }
+                                .div {
+                                    --watching-video-amount: 10;
+                                    }
+                                    .div.watch {
+                                    -webkit-transform: translate(calc(var(--watching-video-amount) * 2, 0) 20px);
+                                    }
+                                    <a href="https://wa.me/17XXXXXXXXXXXX" target="_blank" rel="nofollow" title="Chat with us on WhatsApp">WhatsApp</a>
+                                    Next, we'll add the "a" element for Facebook:
+                                    <a href="https://facebook.com/xxxxxxx" target="_blank" rel="nofollow" title="Like us on Facebook">Facebook</a>
+                                    .div {
+                                        --entry-fee: 6000;
+                                        }
+                                        <text>Your referral code is: <span class="text-code">xxxxxxxxxxxxxxxxx</span></text>
+                                        
